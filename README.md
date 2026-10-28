@@ -1,5 +1,19 @@
 ShowPass - Plataforma de Venda de Ingressos, Controle de Arenas e Gestão de Assentos
 O ShowPass é uma solução completa de Banco de Dados Relacional desenvolvida para gerenciar a infraestrutura de bilhetagem, precificação por setor, alocação física de assentos e controle de acesso via QR Code em arenas e eventos de grande porte (shows, jogos, peças de teatro e festivais).
+
+Problemas Enfrentados Antes do SGBD Relacional
+Antes da implementação do banco de dados relacional, o controle operacional era mantido via planilhas eletrônicas e arquivos isolados, causando:
+
+Overbooking (Vendas Duplicadas): Ausência de controle de concorrência e transações, permitindo a venda simultânea do mesmo assento.
+
+Redundância de Dados: Repetição de dados de clientes, arenas e eventos a cada novo registro.
+
+Falta de Integridade Referencial: Ingressos associados a cadeiras ou eventos inexistentes.
+
+Lentidão Operacional: Dificuldade para consolidação de faturamento e ocupação em tempo real.
+
+Vulnerabilidades de Segurança: Histórico inconfiável do ciclo de vida dos ingressos (emitido, cancelado, utilizado).
+
 <h1>ShowPass - Resumo e Resultados das Consultas SQL</h1>
 
 <h2>Resumo da Estrutura</h2>
